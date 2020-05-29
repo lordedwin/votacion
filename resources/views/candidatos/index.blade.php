@@ -49,7 +49,7 @@
 					                <form method="post" action="{{url('/candidato/'.$candidato->id)}}" class="" title="Eliminar Usuario" style="display: inline;">
 						      		@csrf
 						      		{{method_field('DELETE')}}
-							      		<button type="submit" class="btn btn-danger btn-icon btn-sm now-ui-icons ui-1_simple-remove" onclick="Confirm()"></button>
+							      		<button type="submit" class="btn btn-danger btn-icon btn-sm now-ui-icons ui-1_simple-remove" onclick="return Confirm()"></button>
 							      	</form>
 				                </td>
 				            </tr>
@@ -68,11 +68,19 @@
 @endsection
 	
 @push('js')
-  <script>
-    $(document).ready(function() {
-      // Javascript method's body can be found in assets/js/demos.js
-      demo.initDashboardPageCharts();
+  <script type="text/javascript">
+    
+    function Confirm() {
+    //Ingresamos un mensaje a mostrar
+	    let mensaje = confirm("¿Desea eliminar el candidato?");
+	    //Detectamos si el usuario aceptó o no el mensaje
+	    if (mensaje === true) {
+	    	return true;
+	    }else {
+	    	return false;
+	    }
+	}
+    
 
-    });
   </script>
 @endpush

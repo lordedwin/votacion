@@ -79,15 +79,6 @@
       console.log('Facebook Track Error:', err);
     }
   </script>
-  <script type="text/javascript">
-    
-    function Confirm() {
-    //Ingresamos un mensaje a mostrar
-    var mensaje = confirm("¿Eliminar candidato?");
-    //Detectamos si el usuario acepto el mensaje
-    }
-
-  </script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 </head>
 
@@ -116,8 +107,6 @@
   <script src="{{ asset('assets') }}/js/plugins/bootstrap-notify.js"></script>
   <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
   <script src="{{ asset('assets') }}/js/now-ui-dashboard.min.js?v=1.3.0" type="text/javascript"></script>
-  <!-- Now Ui Dashboard DEMO methods, don't include it in your project! -->
-  <script src="{{ asset('assets') }}/demo/demo.js"></script>
   @stack('js')
 </body>
 

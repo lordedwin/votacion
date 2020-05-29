@@ -116,6 +116,6 @@ class CandidatoController extends Controller
     public function destroy($id)
     {
         Candidato::destroy($id);
-         return redirect()->route('candidato.index')->withStatus(__('Candidato eliminado correctamente.')); 
+        return redirect()->route('candidato.index')->withStatus(__('Candidato eliminado correctamente.'));
     }
 }
