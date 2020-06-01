@@ -46,10 +46,10 @@
 					                <a type="button" href="{{url('/candidato/'.$candidato->id.'/edit')}}" rel="tooltip" class="btn btn-info btn-icon btn-sm " title="Editar Usuario">
 					                <i class="now-ui-icons ui-1_settings-gear-63"></i>
 					                </a>
-					                <form method="post" action="{{url('/candidato/'.$candidato->id)}}" class="" title="Eliminar Usuario" style="display: inline;">
+					                <form method="post" action="{{url('/candidato/'.$candidato->id)}}" class ="formEliminar" title="Eliminar Usuario" style="display: inline;">
 						      		@csrf
 						      		{{method_field('DELETE')}}
-							      		<button type="submit" class="btn btn-danger btn-icon btn-sm now-ui-icons ui-1_simple-remove" onclick="return Confirm()"></button>
+							      		<button type="submit" class="btn btn-danger btn-icon btn-sm now-ui-icons ui-1_simple-remove eliminarCandidato"></button>
 							      	</form>
 				                </td>
 				            </tr>
@@ -68,19 +68,5 @@
 @endsection
 	
 @push('js')
-  <script type="text/javascript">
-    
-    function Confirm() {
-    //Ingresamos un mensaje a mostrar
-	    let mensaje = confirm("¿Desea eliminar el candidato?");
-	    //Detectamos si el usuario aceptó o no el mensaje
-	    if (mensaje === true) {
-	    	return true;
-	    }else {
-	    	return false;
-	    }
-	}
-    
-
-  </script>
+  <script src="{{ asset('assets') }}/js/script.js" type="text/javascript"></script>
 @endpush
