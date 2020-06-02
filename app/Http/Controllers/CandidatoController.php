@@ -116,6 +116,6 @@ class CandidatoController extends Controller
     public function destroy($id)
     {
         Candidato::destroy($id);
-        return redirect()->route('candidato.index');
+        return response() -> json();
     }
 }

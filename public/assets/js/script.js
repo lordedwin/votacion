@@ -3,10 +3,13 @@ document.querySelectorAll('.eliminarCandidato').forEach((el) => {
 });
 
 let form=document.querySelectorAll('.formEliminar');
-let url=`${form.action}`
-console.log(url)
-let token=form.elements._token.value
-let method =form.elements._method.value
+//console.log(form)
+form.forEach((el) => {
+	url = el.getAttribute("action")});
+	
+let token=document.querySelector('.formEliminar input').getAttribute('value');
+
+//let method =form.elements._method.value
 
 function eliminarCandidato(e) {
 	
@@ -17,23 +20,25 @@ function eliminarCandidato(e) {
     	e.preventDefault();
     	return false;
 	}else{
-    	return true;
-	}		
-
-	/*fetch(url, {
+		e.preventDefault();
+    	fetch(url, {
 			headers: {
 			"X-CSRF-TOKEN": token
 		    },
-		    method: method
+		    method: 'DELETE',
 		})
-		.then(response => 
-			console.log(response.json()))	
+		.then(response => response.json())	
 		.then(respuesta => {
 		  console.log(respuesta);
-		});*/
+		});
+
+		this.closest('tr').remove();
+	}		
+}
+
+	
 		
 	//.catch(error) {
 	//	console.log(error);
 	//}
-}
    
