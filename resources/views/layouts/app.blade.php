@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <!-- Extra details for Live View on GitHub Pages -->
   <!-- Canonical SEO -->
- <!--<link rel="canonical" href="https://www.creative-tim.com/product/now-ui-dashboard-pro" />-->
+ <link rel="canonical" href="http://pruebavotacion.herokuapp.com/" />
 
 
   <!--  Social tags      -->
@@ -20,25 +20,13 @@
   <meta itemprop="name" content="votacion 2020, modulo de votacion">
   <meta itemprop="description" content="Nuevo modulo de votacion 2020.">
 
-  <meta itemprop="image" content="https://s3.amazonaws.com/creativetim_bucket/products/72/opt_nudp_thumbnail.jpg">
-
-
-  <!-- Twitter Card data -->
-  <meta name="twitter:card" content="product">
-  <meta name="twitter:site" content="@creativetim">
-  <meta name="twitter:title" content="[Now Ui Dashboard PRO] by Creative Tim">
-
-  <meta name="twitter:description" content="Nuevo modulo de votacion 2020..">
-  <meta name="twitter:creator" content="@creativetim">
-  <meta name="twitter:image" content="https://s3.amazonaws.com/creativetim_bucket/products/72/opt_nudp_thumbnail.jpg">
-
 
   <!-- Open Graph data -->
   <meta property="fb:app_id" content="655968634437471">
   <meta property="og:title" content="Nuevo modulo de votacion 2020." />
   <meta property="og:type" content="article" />
-  <meta property="og:url" content="http://demos.creative-tim.com/now-ui-dashboard-pro/examples/dashboard.html" />
-  <meta property="og:image" content="https://s3.amazonaws.com/creativetim_bucket/products/72/opt_nudp_thumbnail.jpg"/>
+  <meta property="og:url" content="http://pruebavotacion.herokuapp.com" />
+  
   <meta property="og:description" content="Nuevo modulo de votacion 2020." />
   <meta property="og:site_name" content="Edwin Rojas" />
   <title>
