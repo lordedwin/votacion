@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <!-- Extra details for Live View on GitHub Pages -->
   <!-- Canonical SEO -->
-  <link rel="canonical" href="https://www.creative-tim.com/product/now-ui-dashboard-pro" />
+ <!--<link rel="canonical" href="https://www.creative-tim.com/product/now-ui-dashboard-pro" />-->
 
 
   <!--  Social tags      -->
