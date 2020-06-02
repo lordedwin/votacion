@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Voto;
-use App\candidato;
+use App\Candidato;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
