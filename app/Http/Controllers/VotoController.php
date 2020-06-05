@@ -44,11 +44,10 @@ class VotoController extends Controller
 	{
 		$hokage = $request->hokage;
 		$usuario = Auth::user()->id;
-		$user = Voto::select('id')->firstWhere('id',$usuario);
+		$user = Voto::select('usuario_id')->firstWhere('usuario_id',$usuario);
 		$nombre = Candidato::select('nombre')->firstWhere('id',$hokage);
 		
-
-		if ($usuario == $user->id) {
+		if ($usuario == isset($user->usuario_id)) {
 			
 			$mensaje='No puede realizar el voto';
 			

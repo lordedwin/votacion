@@ -3,7 +3,7 @@ document.querySelectorAll('.eliminarCandidato').forEach((el) => {
 });
 
 let form=document.querySelectorAll('.formEliminar');
-//console.log(form)
+
 form.forEach((el) => {
 	url = el.getAttribute("action")});
 	

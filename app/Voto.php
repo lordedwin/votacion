@@ -19,6 +19,6 @@ class Voto extends Model
      */
     public function user()
     {
-        return $this->hasOne('App\User', 'user_id');
+        return $this->hasMany('App\User', 'user_id');
     }
 }
