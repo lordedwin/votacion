@@ -50,7 +50,7 @@ class CandidatoController extends Controller
         $datos = request()->except('_token');
 
         $imagen = $request->file('imagen')->getClientOriginalName();
-        Storage::putFileAs('public/uploads', new File($request->imagen), $imagen);
+        Storage::putFileAs('public', new File($request->imagen), $imagen);
         
 
         $datos = new Candidato;

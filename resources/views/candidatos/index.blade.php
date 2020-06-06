@@ -37,7 +37,7 @@
 				            <tr align="center">
 				                <td>
 					                <span class="avatar avatar-sm rounded-circle">
-					                    <img src="storage/uploads/{{$candidato->imagen}}" alt="" style="max-width: 80px; border-radius: 50%">
+					                    <img src="storage/{{$candidato->imagen}}" alt="" style="max-width: 80px; border-radius: 50%">
 					                </span>
 				                </td>
 				                <td style="text-transform: capitalize;">{{$candidato->nombre}}</td>
