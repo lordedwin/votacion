@@ -17,7 +17,7 @@
 						<div class="col-sm-1 col-md-4">
 							<div style="text-align: center;">
 								<div>
-								<label><img src="storage/uploads/{{$dato->imagen}}" width="60%"> </label>
+								<label><img src="storage/{{$dato->imagen}}" width="60%"> </label>
 								</div>
 								<div style="text-align: center; padding: 10px;">
 									<label class="btn-form"> 
